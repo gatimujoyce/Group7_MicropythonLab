@@ -24,11 +24,9 @@ This project implements an end-to-end IoT sensor pipeline using MicroPython. A D
 | DHT22 Pin | TTGO Pin |
 |---|---|
 | VCC | 5V |
-| SDA (Data) | GPIO 2 |
+| SDA (Data) | GPIO 4 |
 | GND | GND |
-| — | 10 kΩ resistor between 5V row and GPIO 2 row (pull-up) |
-
-> **Note:** GPIO 2 was used instead of the commonly suggested GPIO 4 / GPIO 17, since those pins are not exposed on the TTGO LoRa32's left header. GPIO 2 was the nearest available bidirectional pin (GPIO 35 was also available but is input-only and unsuitable for the DHT22's single-wire protocol).
+| — | 10 kΩ resistor between 5V row and GPIO 4 row (pull-up) |
 
 See `screenshots/breadboard_wiring.png` for the annotated physical wiring.
 
@@ -46,6 +44,7 @@ group7_micropythonlab/
     ├── breadboard_wiring.png
     ├── repl_output.png
     ├── mqtt_subscriber_terminal.png
+    ├── formatted_sqlite_query_result.png 
     └── sqlite_query_result.png
 ```
 
@@ -55,12 +54,8 @@ group7_micropythonlab/
 - [esptool](https://pypi.org/project/esptool/) — flashes MicroPython firmware to the board
 - [MicroPython firmware for ESP32](https://micropython.org/download/ESP32_GENERIC/) (v1.24+)
 - Python 3.9+ (for the PC-side subscriber)
-- `paho-mqtt` (see `requirements.txt`)
+- `paho-mqtt`
 
-Install the PC-side dependency:
-```bash
-pip install -r requirements.txt
-```
 
 ## Setup & Usage
 
@@ -81,8 +76,6 @@ Before uploading, edit `main.py` and set your network credentials:
 WIFI_SSID = "YOUR_WIFI_SSID"
 WIFI_PASSWORD = "YOUR_WIFI_PASSWORD"
 ```
-
-> ⚠️ Do not commit real WiFi credentials to a public repository. Replace with placeholders before pushing if needed.
 
 ### 3. Upload and run `main.py`
 
@@ -132,12 +125,14 @@ CREATE TABLE readings (
 | `screenshots/breadboard_wiring.png` | Annotated DHT22–TTGO wiring on breadboard |
 | `screenshots/repl_output.png` | TTGO REPL showing WiFi + MQTT connection and live published readings |
 | `screenshots/mqtt_subscriber_terminal.png` | PC subscriber receiving and saving 10+ messages |
+| `screenshots/formatted_sqlite_query_result.png` |Formatted SQLite `SELECT` query confirming stored readings with timestamps |
 | `screenshots/sqlite_query_result.png` | SQLite `SELECT` query confirming stored readings with timestamps |
 
 ## Team
 
 **Group 7**
 - Gatimu Joyce Wanjiru – 169203
+  
 
 ## Course
 

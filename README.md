@@ -1,6 +1,6 @@
 # group7_micropythonlab
 
-ICS 4111: Embedded Systems & IoT - MicroPython IoT Lab (Group 7)
+ICS 4111: Embedded Systems & IoT - MicroPython IoT Lab (ICS 4D Group 7)
 
 ## Overview
 
@@ -131,8 +131,12 @@ CREATE TABLE readings (
 
 **Group 7**
 - Gatimu Joyce Wanjiru – 169203
+- Omollo Wendy Leah – 159511
+- Njoroge Viviane Wangari – 169081
+- Mwangi Maxine Wambui – 169390
+- Kimathi Marilyn Kathure – 169689
+- Mukabwa Gloria Joy – 167754
+
   
 
-## Course
 
-ICS 4111: Embedded Systems & IoT, Strathmore University, School of Computing & Engineering Sciences (Apr–Jul 2026)

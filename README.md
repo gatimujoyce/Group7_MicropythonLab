@@ -1,6 +1,6 @@
 # group7_micropythonlab
 
-ICS 4111: Embedded Systems & IoT — MicroPython IoT Lab (Group 7)
+ICS 4111: Embedded Systems & IoT - MicroPython IoT Lab (Group 7)
 
 ## Overview
 

@@ -2,6 +2,16 @@
 
 ICS 4111: Embedded Systems & IoT - MicroPython IoT Lab (ICS 4D Group 7)
 
+## Team
+
+**Group 7**
+- Gatimu Joyce Wanjiru – 169203
+- Omollo Wendy Leah – 159511
+- Njoroge Viviane Wangari – 169081
+- Mwangi Maxine Wambui – 169390
+- Kimathi Marilyn Kathure – 169689
+- Mukabwa Gloria Joy – 167754
+
 ## Overview
 
 This project implements an end-to-end IoT sensor pipeline using MicroPython. A DHT22 sensor connected to a TTGO LoRa32 board reads temperature and humidity, publishes the readings as JSON over MQTT, and a PC-side Python subscriber receives the messages and persists them to a local SQLite database.
@@ -50,7 +60,7 @@ group7_micropythonlab/
 ## Software Requirements
 
 - [Thonny IDE](https://thonny.org/) (or any MicroPython-compatible IDE)
-- [esptool]-https://pypi.org/project/esptool/) — flashes MicroPython firmware to the board
+- [esptool]-https://pypi.org/project/esptool/) - flashes MicroPython firmware to the board
 - [MicroPython firmware for ESP32](https://micropython.org/download/ESP32_GENERIC/) (v1.24+)
 - Python 3.9+ (for the PC-side subscriber)
 - `paho-mqtt`
@@ -126,17 +136,4 @@ CREATE TABLE readings (
 | `screenshots/mqtt_subscriber_terminal.png` | PC subscriber receiving and saving 10+ messages |
 | `screenshots/formatted_sqlite_query_result.png` |Formatted SQLite `SELECT` query confirming stored readings with timestamps |
 | `screenshots/sqlite_query_result.png` | SQLite `SELECT` query confirming stored readings with timestamps |
-
-## Team
-
-**Group 7**
-- Gatimu Joyce Wanjiru – 169203
-- Omollo Wendy Leah – 159511
-- Njoroge Viviane Wangari – 169081
-- Mwangi Maxine Wambui – 169390
-- Kimathi Marilyn Kathure – 169689
-- Mukabwa Gloria Joy – 167754
-
-  
-
 

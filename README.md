@@ -17,7 +17,7 @@ This project implements an end-to-end IoT sensor pipeline using MicroPython. A D
 | Breadboard | For prototyping the circuit |
 | Jumper wires (male-to-male) | Connect TTGO pins to breadboard and DHT22 |
 | 10 kΩ resistor | Pull-up on the DHT22 data line |
-| USB data cable | Must be data-capable — charge-only cables will not be detected for flashing |
+| USB data cable | Must be data-capable: charge-only cables will not be detected for flashing |
 
 ## Wiring
 
@@ -26,7 +26,7 @@ This project implements an end-to-end IoT sensor pipeline using MicroPython. A D
 | VCC | 5V |
 | SDA (Data) | GPIO 4 |
 | GND | GND |
-| — | 10 kΩ resistor between 5V row and GPIO 4 row (pull-up) |
+| 10 kΩ resistor between 5V row and GPIO 4 row (pull-up) |
 
 See `screenshots/breadboard_wiring.png` for the annotated physical wiring.
 
@@ -35,7 +35,6 @@ See `screenshots/breadboard_wiring.png` for the annotated physical wiring.
 ```
 group7_micropythonlab/
 ├── README.md
-├── requirements.txt
 ├── main.py                  # MicroPython script (runs on the TTGO)
 ├── subscriber.py            # PC-side MQTT subscriber + SQLite writer
 ├── check_db.py              # Verifies stored readings in SQLite

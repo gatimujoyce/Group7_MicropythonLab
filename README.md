@@ -50,7 +50,7 @@ group7_micropythonlab/
 ## Software Requirements
 
 - [Thonny IDE](https://thonny.org/) (or any MicroPython-compatible IDE)
-- [esptool](https://pypi.org/project/esptool/) — flashes MicroPython firmware to the board
+- [esptool]-https://pypi.org/project/esptool/) — flashes MicroPython firmware to the board
 - [MicroPython firmware for ESP32](https://micropython.org/download/ESP32_GENERIC/) (v1.24+)
 - Python 3.9+ (for the PC-side subscriber)
 - `paho-mqtt`
